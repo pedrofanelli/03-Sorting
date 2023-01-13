@@ -8,7 +8,6 @@ function split(wholeArray) {
     }
     if (wholeArray.length % 2 != 0) {
         impar = Math.floor(wholeArray.length / 2);
-
         for (let i = 0; i < impar; i++) {
         firstHalf.push(wholeArray[i]);
         }
@@ -55,9 +54,7 @@ function mergeSort(arr) {
     if (arr.length < 2) {
         return arr;
     }
-
     let newArr = split(arr);
-
     const [firstHalf, secondHalf] = newArr;
     
     return merge(mergeSort(firstHalf), mergeSort(secondHalf));

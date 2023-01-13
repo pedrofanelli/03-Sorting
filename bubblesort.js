@@ -13,8 +13,9 @@ function swap(arreglo, index1, index2) {
     /* tu codigo acá */
     let temp = arreglo[index1];
     if (arreglo[index1] > arreglo[index2]) {
-        arreglo[index1] = arreglo[index2];
-        arreglo[index2] = temp;
+        [arreglo[index2], arreglo[index1]] = [arreglo[index1], arreglo[index2]]
+/*         arreglo[index1] = arreglo[index2];
+        arreglo[index2] = temp; */
     }
     return arreglo;
 }
