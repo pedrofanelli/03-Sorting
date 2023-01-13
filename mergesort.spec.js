@@ -12,6 +12,12 @@ describe('Split Array function', function() {
 describe("Merge", function () {
     it("es capaz de combinar dos Arreglos ordenados en uno solo ordenado", function () {
       // testeá el algoritmo
+        expect(merge([1, 2, 4, 6], [3, 5, 8, 9])).toEqual(
+        [1, 2, 3, 4, 5, 6, 8, 9],
+        );
+    });
+    it("es capaz de combinar dos Arreglos ordenados en uno solo ordenado", function () {
+        // testeá el algoritmo
         expect(merge([1, 2, 4, 6, 7], [3, 5, 8, 9])).toEqual(
         [1, 2, 3, 4, 5, 6, 7, 8, 9],
         );

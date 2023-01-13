@@ -4,7 +4,7 @@ function split(wholeArray) {
     let secondHalf = [];
     if (wholeArray.length % 2 != 0) {
         impar = Math.floor(wholeArray.length / 2);
-  
+
         for (let i = 0; i < impar; i++) {
         firstHalf.push(wholeArray[i]);
         }
@@ -45,4 +45,9 @@ function merge(arr1, arr2) {
         }
     }
     return total;
+}
+
+function mergeSort(array) {
+    /* tu código acá */
+    
 }
