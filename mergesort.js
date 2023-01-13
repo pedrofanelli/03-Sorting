@@ -2,6 +2,10 @@ function split(wholeArray) {
     let impar;
     let firstHalf = [];
     let secondHalf = [];
+    // Para evitar errores
+    if (wholeArray.length === 0 || wholeArray.length === 1) {
+        return wholeArray;
+    }
     if (wholeArray.length % 2 != 0) {
         impar = Math.floor(wholeArray.length / 2);
 
@@ -47,7 +51,14 @@ function merge(arr1, arr2) {
     return total;
 }
 
-function mergeSort(array) {
-    /* tu código acá */
+function mergeSort(arr) {
+    if (arr.length < 2) {
+        return arr;
+    }
+
+    let newArr = split(arr);
+
+    const [firstHalf, secondHalf] = newArr;
     
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf));
 }

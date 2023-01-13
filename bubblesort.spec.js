@@ -1,17 +1,17 @@
 describe('Bubble Sort', function(){
-    xit('handles an empty array', function(){
+    it('handles an empty array', function(){
         expect( bubbleSort([]) ).toEqual( [] );
     });
-    xit('sorts an unordered array', function(){
+    it('sorts an unordered array', function(){
         expect( bubbleSort([4, 2, 11, 7, 9, 6]) ).toEqual( [2, 4, 6, 7, 9, 11] );
     });
-    xit('handles an ordered array', function(){
+    it('handles an ordered array', function(){
         expect( bubbleSort([2, 4, 6, 7, 9, 11]) ).toEqual( [2, 4, 6, 7, 9, 11] );
     });
-    xit('handles an ordered array', function(){
+    it('handles an ordered array', function(){
         expect( bubbleSort([6, 5, 4, 3, 2, 1]) ).toEqual( [1, 2, 3, 4, 5, 6] );
     });
-    xit('check on swap', function () {
+    it('check on swap', function () {
         spyOn(window, 'swap').and.callThrough(); 
         // callThrough le dice al spy que utilice el método original chocolate['masticar'], 
         // mientras que `callFake` haría una copia.
